@@ -1,0 +1,348 @@
+/*
+Theme Name: Sparky
+Author: Daniel Mitchell
+Author URI: DanielMitchellDev.com
+Description: A clever template. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sparky
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+===============
+	GENERAL
+===============
+*/
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+	/*background-image: url('../inc/img/banner-stock-darkened.jpg');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.header-container{
+	height: 378px;
+	text-align: center;
+	color: white;
+}
+.header-container h1{
+	margin-top: 140px;
+}
+
+/*
+=============
+	NAV
+=============	
+*/
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+/* navbar */
+.navbar-default {
+	background-color: rgba(255, 255, 255, .2);
+	border-color: transparent;
+	height: 68px;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding: 0;    
+}
+.current-menu-item a{
+	padding-bottom: 7px !important; 
+	border-bottom: 2px solid white !important;
+} 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.navbar-collapse{
+		background-color: black;
+	}
+	.navbar-default {
+		background-color: black;
+		border-color: black;
+	}
+	.navbar-default .navbar-nav > li > a {
+	    color: white;
+		font-size: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 20px;
+		padding: 0;    
+	}
+	.navbar{
+		z-index: 10000;
+	}		
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/*
+================
+	SIDEBAR
+================
+*/
+.picture-row{
+	margin-top: 30px;
+}
+
+.col-meta{
+	margin-top: 20px;
+	border-right: solid gray 1px;
+}
+.social-icon{
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*
+===============
+	WIDGET
+===============
+*/
+
+.module ul{
+	padding: 0;
+}
+.sparky-widget-title{
+	padding-top: 4px;
+	padding-bottom: 4px;	
+	 background-color: rgb(33,33,33);
+	 color: white;
+	 border-radius: 10px;
+}
+.cat-item{
+	list-style: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+.cat-item a{
+	color: red;
+}
+.recentcomments{
+	list-style: none;
+}
+.recentcomments a{
+	color: red;
+}
+.comment-author-link{
+	font-weight: bold;
+}
+.tagcloud a{
+	background-color: red;
+	font-size: 14px !important;
+	color: white;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 10px;
+}
+/*
+===============
+	BLOG
+===============
+*/
+.col-blog{
+	margin-top: 60px;
+}
+.blog-plate{
+	margin-bottom: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+.blog-picture-plate{
+	margin-top: 10px;
+	text-align: center;
+}
+.blog-picture-plate img{
+	width: 100%;
+	height: auto;
+}
+.blog-title-plate{
+	margin-top: 5px;
+}
+.blog-title-plate h3{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.blog-title-plate h3 a{
+	color: black;
+}
+.blog-author-plate{
+
+}
+.blog-author-plate h5{
+	margin-top: 0;
+	margin-bottom: 3px;
+
+}
+.blog-author-plate h5 a{
+	color: #333;
+}
+.blog-date-plate{
+
+}
+.blog-date-plate h5{
+	margin-top: 0;
+	margin-bottom: 3px;
+	color: #333;
+}
+.blog-comment-plate{
+
+}
+.blog-comment-plate h5{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.blog-comment-plate h5 a{
+	color: #333;
+}
+.blog-excerpt{
+	font-size: 18px;
+	color: #333;
+}
+.blog-content{
+	font-size: 18px;
+	color: #333;
+}
+.blog-footer{
+	margin-top: 20px;
+}
+.footer-divider{
+	margin-bottom: 10px;
+}
+.footer-divider-line{
+	height: 2px;
+	background-color: red;
+}
+.category-row{
+	margin-top: 10px;
+}
+.post-categories{
+
+}
+.post-categories li{
+	margin-top: 0;
+	list-style: none;
+	display: inline-block;
+}
+.post-categories li a{
+	color: black;
+	font-size: 16px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+.tag-row{
+	margin-top: 5px;
+}
+.tag-plate{
+}
+.tag-plate ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 10px 0 0 0;
+}
+.tag-plate a{
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	background-color: rgb(210, 210, 210);
+	color: white;
+	font-size: 12px;
+}
+
+/*
+===============
+	FOOTER
+===============
+*/
+footer{
+	margin-top: 40px;
+	background-color: rgb(55,55,55);
+}
+footer .container{
+	height: 68px;
+}
+footer p{
+	margin-top: 30px;
+	color: white;
+}
